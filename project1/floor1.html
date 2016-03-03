@@ -49,6 +49,8 @@ div.absolute {
 <style>
 div.relative {
     position: relative;
+    top: 0;
+    right:0;
     width: 136px;
     height: 20px;
     
@@ -57,7 +59,7 @@ div.relative {
 div.absolute {
     position: absolute;
     top: 0px;
-    left: 200;
+    right: 0;
     width: 436px;
     height: 20px;
     
@@ -74,36 +76,40 @@ div.absolute {
 
 </body>
 
+
+
 <head>
 <style>
-div.relative {
+.container {
     position: relative;
-    width: 700px;
-    height: 20px;
-    
-} 
+}
 
-div.absolute {
+.center {
     position: absolute;
-    top: 0px;
-    left: 300;
-    width: 940px;
-    height: 20px;
-    
+    left: 0;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    font-size: 18px;
+    font-style: helvetica;
+    font-color: color:#FE9A2E;
+}
+
+img { 
+    width: 100%;
+    height: auto;
+
 }
 </style>
 </head>
 <body>
 
-
-<div class="relative"><img src="whatnerve.png" width="530" height="1000">
-  <div class="absolute"><h1 style="font-family: helvetica; color:#FE9A2E">Peter Saul, Man In Electric Chair</h1>
-</div>
+<div class="container">
+  <img src="whatnerve.png" alt="chicken" width="530" height="1000">
+  <div class="center">Peter Saul, Man In Electric Chair</div>
 </div>
 
 </body>
-
-
 
 
 
