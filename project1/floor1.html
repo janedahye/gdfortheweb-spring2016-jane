@@ -29,7 +29,7 @@ div.absolute {
     top: 360px;
     right: 0;
     width: 543px;
-    height: 50px;
+    height: 60px;
     
 }
 </style>
@@ -37,7 +37,7 @@ div.absolute {
 <body>
 
 
-<div class="relative"><img src="wood.png" width="543" height="427">;
+<div class="relative"><img src="wood.png" width="543" height="427">
   <div class="absolute"><h1 style="font-family: helvetica; color:#FE9A2E">Ray Eames, Splint</h1>
 </div>
 </div>
@@ -47,10 +47,19 @@ div.absolute {
 
 <head>
 <style>
-div.fixed {
-    position: fixed;
-    top: 0;
-    right: 0;
+div.relative {
+    position: relative;
+    width: 136px;
+    height: 166.25px;
+    
+} 
+
+div.absolute {
+    position: absolute;
+    top: 0px;
+    left: 130;
+    width: 436px;
+    height: 60px;
     
 }
 </style>
@@ -58,14 +67,13 @@ div.fixed {
 <body>
 
 
-<div class="fixed">
-<h1 style="font-family: helvetica; color:#FE9A2E">Alexander Calder, Untitled</h1>
-<img src="calder.png" width="136" height="166.25">
+<div class="relative"><img src="calder.png" width="543" height="427">
+  <div class="absolute"><h1 style="font-family: helvetica; color:#FE9A2E">Alexander Calder, Untitled</h1>
+</div>
 </div>
 
-
-
 </body>
+
 
 
 
