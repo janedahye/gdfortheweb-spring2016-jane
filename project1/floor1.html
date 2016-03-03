@@ -47,31 +47,28 @@ div.absolute {
 
 <head>
 <style>
-div.relative {
+.container {
     position: relative;
-    top: 0;
-    right:0;
-    width: 136px;
-    height: 20px;
-    
-} 
+}
 
-div.absolute {
+.topright {
     position: absolute;
-    top: 0px;
-    right: 0;
-    width: 436px;
-    height: 20px;
-    
+    top: 8px;
+    right: 16px;
+    font-size: 18px;
+}
+
+img { 
+    width: 100%;
+    height: auto;
 }
 </style>
 </head>
 <body>
 
-
-<div class="relative"><img src="calder.png" width="543" height="427">
-  <div class="absolute"><h1 style="font-family: helvetica; color:#FE9A2E">Alexander Calder, Untitled</h1>
-</div>
+<div class="container">
+  <img src="calder.png" alt="Calder" width="543" height="427">
+  <div class="topright"><h1 style="font-family: helvetica; color:#FE9A2E">Alexander Calder, Untitled</h1></div>
 </div>
 
 </body>
@@ -90,9 +87,7 @@ div.absolute {
     top: 50%;
     width: 100%;
     text-align: center;
-    font-size: 18px;
-    font-style: helvetica;
-    font-color: color:#FE9A2E;
+    font-size: 45px;
 }
 
 img { 
@@ -106,7 +101,7 @@ img {
 
 <div class="container">
   <img src="whatnerve.png" alt="chicken" width="530" height="1000">
-  <div class="center">Peter Saul, Man In Electric Chair</div>
+  <div class="center"><h1 style="font-family: helvetica; color:#FE9A2E">Peter Saul, Man In Electric Chair</h1></div>
 </div>
 
 </body>
