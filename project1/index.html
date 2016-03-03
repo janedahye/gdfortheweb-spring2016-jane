@@ -76,6 +76,120 @@
 
 <head>
 <style>
+/* Navigation Menu - Background */
+.navigation {
+  /* critical sizing and position styles */
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 0;
+  
+  /* non-critical appearance styles */
+  list-style: none;
+  background: #111;
+}
+
+/* Navigation Menu - List items */
+.nav-item {
+  /* non-critical appearance styles */
+  width: 200px;
+  border-top: 1px solid #111;
+  border-bottom: 1px solid #000;
+}
+
+.nav-item a {
+  /* non-critical appearance styles */
+  display: block;
+  padding: 1em;
+  background: linear-gradient(135deg, rgba(0,0,0,0) 0%,rgba(0,0,0,0.65) 100%);
+  color: white;
+  font-size: 1.2em;
+  text-decoration: none;
+  transition: color 0.2s, background 0.5s;
+}
+
+.nav-item a:hover {
+  color: #c74438;
+  background: linear-gradient(135deg, rgba(0,0,0,0) 0%,rgba(75,20,20,0.65) 100%);
+}
+
+/* Site Wrapper - Everything that isn't navigation */
+.site-wrap {
+  /* Critical position and size styles */
+  min-height: 100%;
+  min-width: 100%;
+  background-color: white; /* Needs a background or else the nav will show through */
+  position: relative;
+  top: 0;
+  bottom: 100%;
+  left: 0;
+  z-index: 1;
+  
+  /* non-critical apperance styles */
+  padding: 4em;
+  background-image: linear-gradient(135deg, rgb(254,255,255) 0%,rgb(221,241,249) 35%,rgb(160,216,239) 100%);
+  background-size: 200%;
+}
+
+/* Nav Trigger */
+.nav-trigger {
+  /* critical styles - hide the checkbox input */
+  position: absolute;
+  clip: rect(0, 0, 0, 0);
+}
+
+label[for="nav-trigger"] {
+  /* critical positioning styles */
+  position: fixed;
+  left: 15px; top: 15px;
+  z-index: 2;
+  
+  /* non-critical apperance styles */
+  height: 30px;
+  width: 30px;
+  cursor: pointer;
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' version='1.1' x='0px' y='0px' width='30px' height='30px' viewBox='0 0 30 30' enable-background='new 0 0 30 30' xml:space='preserve'><rect width='30' height='6'/><rect y='24' width='30' height='6'/><rect y='12' width='30' height='6'/></svg>");
+  background-size: contain;
+}
+
+/* Make the Magic Happen */
+.nav-trigger + label, .site-wrap {
+  transition: left 0.2s;
+}
+
+.nav-trigger:checked + label {
+  left: 215px;
+}
+
+.nav-trigger:checked ~ .site-wrap {
+  left: 200px;
+  box-shadow: 0 0 5px 5px rgba(0,0,0,0.5);
+}
+
+body {
+    /* Without this, the body has excess horizontal scroll when the menu is open */
+  overflow-x: hidden;
+}
+
+/* Additional non-critical styles */
+
+h1, h3, p {
+  max-width: 600px;
+  margin: 0 auto 1em;
+}
+
+code {
+    padding: 2px;
+    background: #ddd;
+}
+
+/* Micro reset */
+*,*:before,*:after{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;margin:0;padding:0;}
+html, body { height: 100%; width: 100%; font-family: Helvetica, Arial, sans-serif; }
 ul {
     list-style-type: none;
     margin: 0;
@@ -85,58 +199,18 @@ ul {
 </head>
 <body>
 
-<div class="off-canvas-wrap" data-offcanvas>
-<div class="inner-wrap">
-<nav class="tab-bar">
-  <section class="left-small">
-    <a class="left-off-canvas-toggle menu-icon" href="#"><span></span></a>
-  </section>
-  <section class="middle tab-bar-section">
-    <h1 class="title">Foundation</h1>
-  </section>
-  <section class="right-small">
-    <a class="right-off-canvas-toggle menu-icon" href="#"><span></span></a>
-  </section>
-</nav>
-<aside class="left-off-canvas-menu">
-      <ul class="off-canvas-list">
-        <li><label>Foundation</label></li>
-        <li><a href="#">Gird</a></li>
-        <li><a href="#">Off-canvas</a></li>
-        <li><a href="#">Interchange</a></li>
-        <li><a href="#">Accordion</a></li>
-        <li><a href="#">Orbit Slider</a></li> 
-      </ul>
-</aside>
-<aside class="right-off-canvas-menu">
-      <ul class="off-canvas-list">
-        <li><label>Foundation</label></li>
-        <li><a href="#">Gird</a></li>
-        <li><a href="#">Off-canvas</a></li>
-        <li><a href="#">Interchange</a></li>
-        <li><a href="#">Accordion</a></li>
-        <li><a href="#">Orbit Slider</a></li> 
-      </ul>
-    </aside>
-<section class="main-section">
-<h5>Grid System</h5>
-<p>Foundation grid increased and decreased based on the browser width. Bootstrap has set of pre-defined grid sizes for screens and main devices. It will suddenly change the grid size while you resizing the browser width. Foundation will adapt its grid to the current browser. Both grid systems have all of the advanced features such as nesting, offsets and pushing/pulling.
-Bootstrap grid use 12 columns making for a 940 px wide container without responsive. If responsive feature added, the grid adapts to be 724 px and 1170 px wide based on view port. The zurb foundation grid specify width each column with the small, medium and large.</p>
-</section>
-<a class="exit-off-canvas"></a>
-<div>
-<div>
-
-<ul id="menu">
-    <a href="/gdfortheweb-spring2016-jane/project1/floor1.html"><li><hr align="right"; style="height:3px;width:20px;border:none;color:#585858;background-color:#FA5882;" /></li></a>
-    <a href="/gdfortheweb-spring2016-jane/project1/floor2.html"><li><hr align="right"; style="height:3px;width:20px;border:none;color:#585858;background-color:#FA5882;" /></li></a>
-    <a href="/gdfortheweb-spring2016-jane/project1/floor3.html"><li><hr align="right"; style="height:3px;width:20px;border:none;color:#585858;background-color:#FA5882;" /></li></a>
-    
-    fnav ul a {
-    color: inherit;
-    text-decoration: none;
-}
+<ul class="navigation">
+    <li class="nav-item"><a href="/gdfortheweb-spring2016-jane/project1/floor1.html">Floor 1</a></li>
+    <li class="nav-item"><a href="/gdfortheweb-spring2016-jane/project1/floor2.html">Floor 2</a></li>
+    <li class="nav-item"><a href="/gdfortheweb-spring2016-jane/project1/floor3.html">Floor 3</a></li>
 </ul>
+
+<input type="checkbox" id="nav-trigger" class="nav-trigger" />
+<label for="nav-trigger"></label>
+
+<div class="site-wrap">
+
+
 
 
 
