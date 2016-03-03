@@ -1,6 +1,12 @@
 body {
 	background-color: red;
 	color: white;
+	background-image: url("bg.jpg");
+}
+
+.is-night {
+	background-color: black
+
 }
 
 h1 {
@@ -22,3 +28,4 @@ p {
 .sans {
 	font-family:sans-serif;
 }
+
