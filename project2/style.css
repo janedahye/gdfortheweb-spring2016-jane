@@ -58,6 +58,12 @@ p {
 	font-size:11pt;
 }
 
+p.width {
+    height: 230px;
+    width: 600px;
+    line-height: 160%;
+}
+
 .head {
 	font-size: 9pt;
 }
