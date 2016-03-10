@@ -1,9 +1,22 @@
 body {
 	margin:0;
 	padding:0;
-}
-h1 {
 	font-family: arial;
+}
+
+
+h3 {
+	font-family: arial;
+	text-decoration: overline;
+}
+
+
+.text {
+	border-radius: 25px;
+	background: #ffffff;
+	padding:20px;
+	width: relative;
+	height: 150px;
 }
 
 .container {
@@ -41,17 +54,6 @@ background-size:cover;
 	height: 150px;
 }
 
-h6 {
-	font-family: arial;
-}
-
-.text {
-	border-radius: 25px;
-	background: #ffffff;
-	padding:20px;
-	width: relative;
-	height: 150px;
-}
 
 p {
 	font-family: arial;
@@ -66,26 +68,14 @@ p.width {
 }
 
 .head {
-	font-size: 9pt;
+	font-size: 19pt;
+
 }
 
-h2 {
-	font-family: arial;
+.p:hover {
+	color:white;
 }
 
-h3 {
-	font-family: arial;
-	text-decoration: overline;
-}
-
-
-h4 {
-	font-family: arial;
-}
-
-h5 {
-	font-family: arial;
-}
 
 #header h1,
 #header h2,
