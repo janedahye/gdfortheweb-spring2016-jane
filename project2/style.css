@@ -50,6 +50,14 @@ p {
 	font-size: 9pt;
 }
 
+h2 {
+	font-family: arial;
+}
+
+h3 {
+	font-family: arial;
+}
+
 #header h1,
 #header h2,
 #header p {
