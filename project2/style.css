@@ -13,6 +13,18 @@ h1 {
     max-width: 500px;
 }
 
+.pageBackground {
+position: relative;
+}
+
+.pageBackground img {
+width: 100%;
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+background-size:cover;
+}
+
 .button {
     background-color: #bbb;
     display: block;
