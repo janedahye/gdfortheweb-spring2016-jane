@@ -1,15 +1,22 @@
 body {
 	margin:0;
 	padding:0;
-	font-family: arial;
+	font-family: worksans-regular;
 }
 
 
 h3 {
-	font-family: arial;
+	font-family: worksans-regular;
 	text-decoration: overline;
 }
 
+@font-face{ 
+	font-family: 'WorkSans';
+	src: url('webfonts/woff/WorkSans-Regular.woff') format('woff'),
+		 url('webfonts/woff2/WorkSans-Regular.woff2') format('woff2'),
+	     url('webfonts/ttf/WorkSans-Regular.ttf') format('truetype'),
+
+}
 
 .text {
 	border-radius: 25px;
@@ -56,7 +63,7 @@ background-size:cover;
 
 
 p {
-	font-family: arial;
+	font-family: worksans-regular;
 	font-size:11pt;
 }
 
@@ -72,9 +79,6 @@ p.width {
 
 }
 
-.p:hover {
-	color:white;
-}
 
 
 #header h1,
