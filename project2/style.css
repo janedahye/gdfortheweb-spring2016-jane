@@ -51,7 +51,7 @@ span.rollover:hover {
 }
 
 .container {
-    background-color: #ddd;
+    background-color: #404040;
     padding: 20px;
     margin: 0 auto;
     max-width: 500px;
@@ -79,7 +79,7 @@ background-size:cover;
 
 .rcorners1 {
 	border-radius: 25px;
-	background: #fbeaea;
+	background: #f3bfbf;
 	padding: 0px;
 	width: relative;
 	height: 150px;
