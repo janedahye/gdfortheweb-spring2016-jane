@@ -24,14 +24,14 @@ h1 {
 #clockdiv > div{
     padding: 10px;
     border-radius: 3px;
-    background: #00BF96;
+    background: #808080;
     display: inline-block;
 }
 
 #clockdiv div > span{
     padding: 15px;
     border-radius: 3px;
-    background: #00816A;
+    background: #000000;
     display: inline-block;
 }
 
@@ -45,7 +45,7 @@ h1 {
     color: #fff;
     padding: 100px;
     border-radius: 3px;
-    background: #00816A;
+    background: #808080;
     display: inline-block;
 
 }
