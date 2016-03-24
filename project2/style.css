@@ -9,6 +9,12 @@ body {
 h3 {
 	font-family: worksans-regular;
 	text-decoration: overline;
+	text-align:center;
+}
+
+h5 {
+	font-family: worksans-regular;
+	text-align:center;
 }
 
 @font-face{ 
