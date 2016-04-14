@@ -1,18 +1,16 @@
 
+var today = new Date();
+var dd = today.getDate();
+var mm = today.getMonth()+1; //January is 0
+var yyyy = today.getFullYear();
 
+if(dd<10) {
+    dd='0'+dd
+} 
 
-$("div").hover(function(){
-	if ($(this).addClass("hover")) {
+if(mm<10) {
+    mm='0'+mm
+} 
 
-		$(this).removeClass("hover");
-
-		var choices = ["sunny","warm","rainy", "grey", "bright", "snowy", "foggy" ];
-		
-		var choice= choices[Math.floor(Math.random()*choices.length)];
-		document.write('<font size = \"50px\">The weather for tomorrow is' + "<br>" + choice);
-
-
-	}
-
-});
-
+today = mm+'/'+dd+'/'+yyyy;
+document.write(today);

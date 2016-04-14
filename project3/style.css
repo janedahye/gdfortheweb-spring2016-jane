@@ -1,18 +1,4 @@
-div {
-	width:400px;
-	height:400px;
-	/*display: inline-block;*/
-	float: left;
-	border-radius: 10%;
+p {
 	font-family: arial;
-	color: white;
-	background-color:#808080;
-	text-align: center;
-	font-size: 60px;
+	font-size:10px;
 }
-
-.clicked {
-	width:20px;
-	height:20px;
-}
-
