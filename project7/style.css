@@ -4,9 +4,8 @@ body {
 	font-family:worksans-regular;
 }
 
-h1 {
+h2 {
 	font-family: worksans-regular;
-	text-decoration: overline;
 	text-align: center;
 }
 
@@ -19,6 +18,8 @@ h1 {
 
 p {
 	font-family: worksans-regular;
+	/* text-decoration: overline; */
+	text-align: center;
 	font-size: 11pt;
 }
 
@@ -28,3 +29,9 @@ p.width {
 	line-height: 160%;
 	letter-spacing: .5px;
 }
+
+form {
+	text-align: center;
+}
+
+.error {color: #FF0000;}
