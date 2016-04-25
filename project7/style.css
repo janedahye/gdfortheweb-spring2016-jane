@@ -50,8 +50,43 @@ section {
     margin-right: -50%;
     transform: translate(-50%, -50%) }
 
-.progressjs-theme-blue .progressjs-inner {
-	height: 2px;
-	transition: all 0.3s ease-out;
-	background-color: #3498db;
+.pace {
+  -webkit-pointer-events: none;
+  pointer-events: none;
+
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
 }
+
+.pace.pace-inactive .pace-progress {
+  display: none;
+}
+
+.pace .pace-progress {
+  position: fixed;
+  z-index: 2000;
+  top: 0;
+  right: 0;
+  height: 5rem;
+  width: 5rem;
+
+  -webkit-transform: translate3d(0, 0, 0) !important;
+  -ms-transform: translate3d(0, 0, 0) !important;
+  transform: translate3d(0, 0, 0) !important;
+}
+
+.pace .pace-progress:after {
+  display: block;
+  position: absolute;
+  top: 0;
+  right: .5rem;
+  content: attr(data-progress-text);
+  font-family: "Helvetica Neue", sans-serif;
+  font-weight: 100;
+  font-size: 5rem;
+  line-height: 1;
+  text-align: right;
+  color: rgba(100, 219, 32, 0.19999999999999996);
+}
+
