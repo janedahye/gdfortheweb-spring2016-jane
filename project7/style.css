@@ -9,6 +9,10 @@ h2 {
 	text-align: center;
 }
 
+.color {
+	color: red;
+}
+
 @font-face {
 	font-family: 'WorkSans';
 	src: url('webfonts/woff/WorkSans-Regular.woff') format('woff'),
