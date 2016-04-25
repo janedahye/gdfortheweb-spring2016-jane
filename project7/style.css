@@ -50,3 +50,8 @@ section {
     margin-right: -50%;
     transform: translate(-50%, -50%) }
 
+.progressjs-theme-blue .progressjs-inner {
+	height: 2px;
+	transition: all 0.3s ease-out;
+	background-color: #3498db;
+}
