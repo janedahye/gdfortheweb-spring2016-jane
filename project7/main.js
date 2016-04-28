@@ -13,3 +13,20 @@ function handleVideo(stream) {
 function videoError(e) {
     // do something
 }
+
+pmBox.bgColor='#FFFFFF';
+setInterval("Timer()", 500);
+x=1;
+function Timer() {
+	set=1;
+	if(x==0 && set==1) {
+		pmBox.bgColor='#FFFF00';
+		x=1;
+		set=0;
+	}
+	if(x==1 && set==1) {
+		pmBox.bgColor='#F0E68C';
+		x=0;
+		set=0;
+	}
+}
