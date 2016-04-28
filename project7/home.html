@@ -4,34 +4,61 @@
 	<meta charset="utf-8">
 	<link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-<br>
-<p><span class="error">* required field.</span></p>
-<br>
+
 <form>
-First name: <br>
-<input type = "text" name = "firstname">
-<span class = "error">* </span>
-<br><br>
-Last name: <br>
-<input type = "text" name = "lastname">
-<span class = "error">* </span>
-<br><br>
-Age: <br>
-<input type = "text" name = "age">
-<span class = "error">* </span> 
-<br><br>
-Occupation: <br>
-<input type = "text" name = "occupation">
-<span class = "error">* </span>
-<br><br>
-Email: <br>
-<input type = "text" name = "email">
-<span class = "error">* </span>
-<br><br>
-<input type = "button" name = "submit" value = "Submit" onClick="parent.location='http://janedahye.github.io/gdfortheweb-spring2016-jane/project7/question1.html'">
+	<div class="label">First name:</div>
+	<input id="name" type="text" name"firstname" size="15" maxlength="30">
+	<input id="submit" type="submit" value="submit"></td>
 </form>
+
+<script type="text/javascript" src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
+<script type="text/javascript" src="js.cookie.js"></script>
+<script type="text/javascript">
+
+	$(function() {
+
+		// code goes here
+		$("#submit").click(function(e) {
+			e.preventDefault();
+
+			var name = $("#name").val();
+			Cookies.set('name', name);
+		});
+
+	});
+
+</script>
+
+<!-- 
+
+<table border=0>
+<tr>
+<td> First name: </td>
+<td align="center"><input type="text" name"firstname" size="15" maxlength="30"></td>
+</tr>
+<tr>
+<td> Last name: </td>
+<td align="center"><input type="text" name="lastname" size="15" maxlength="30"></td>
+</tr>
+<tr>
+<td> Age: </td>
+<td align="center"><input type="text" name="age" size="15" maxlength="3"></td>
+</tr>
+<tr>
+<td> Occupation: </td>
+<td align="center"><input type="text" name="occupation" size ="15" maxlength="30"></td>
+</tr>
+<tr>
+<td> Email: </td>
+<td align="center"><input type="text" name="email" size="15" maxlength="30"></td>
+</tr>
+<tr>
+<td colspan="2" align="center"><br>
+<input type="submit" value="submit"></td>
+</tr>
+</table>
+</FORM> -->
 
 </body>
 </html>

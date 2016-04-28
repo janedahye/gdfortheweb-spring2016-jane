@@ -27,6 +27,23 @@ p {
 	font-size: 11pt;
 }
 
+.answers {
+  font-family: worksans-regular;
+  text-align: center;
+  font-size: 11pt;
+}
+
+div.textContainer {
+  width:103em;
+  margin: 0 auto; 1em auto;
+  border: none;
+  padding:1em;
+}
+
+div.textContainer p{
+  ;
+}
+
 p.width {
 	height: 230px;
 	width: 600px;
@@ -53,6 +70,15 @@ section {
     left: 50%;
     margin-right: -50%;
     transform: translate(-50%, -50%) }
+
+.answers li {
+  list-style:upper-alpha;
+}
+
+label {
+  margin-left:0.5em;
+  cursor:pointer;
+}
 
 .pace {
   -webkit-pointer-events: none;

@@ -7,9 +7,22 @@
 
 <body>
 	<div class="section">
-	<p> Have you ever been to China or Korea? </p>
+	<p class="question">Have you ever been to China or Korea? </p>
 	<br>
-	<p> <a href = "http://janedahye.github.io/gdfortheweb-spring2016-jane/project7/question2.html"> Yes </a>/<a href = "http://janedahye.github.io/gdfortheweb-spring2016-jane/project7/question2.html"> No </a></p>
+	<form method="post" action="q1answer.html">
+	<ul class="answers">
+		<input type="radio" name="q1" value="a" <?php if(isset($_POST['q1']) && ($_POST['q1']== 'a')) echo 'checked="checked" ';?>
+		Yes <br />
+		<input type="radio" name="q1" value="b" id="q1b"><label for="q1b">Maybe</label><br/>
+		<input type="radio" name="q1" value="c" id="q1c"><label for="q1c">No</label><br/>
+	</ul>
+	<p>
+	<input type ="submit" name="action" value="next" />
+ 	</p>
+	</form>
 	</div>
 </body>
 </html>
+
+
+  
