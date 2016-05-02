@@ -1,11 +1,11 @@
 body {
 	margin: 0;
 	padding: 0;
-	font-family:worksans-regular;
+	font-family:abel-regular;
 }
 
 h2 {
-	font-family: worksans-regular;
+	font-family: abel-regular;
 	text-align: center;
 }
 
@@ -21,14 +21,14 @@ h2 {
 	}
 
 p {
-	font-family: worksans-regular;
+	font-family: abel-regular;
 	/* text-decoration: overline; */
 	text-align: center;
 	font-size: 11pt;
 }
 
 .answers {
-  font-family: worksans-regular;
+  font-family: abel-regular;
   text-align: center;
   font-size: 11pt;
 }
