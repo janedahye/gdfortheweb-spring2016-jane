@@ -20,6 +20,11 @@ h2 {
 	text-align: center;
 }
 
+h3 {
+  font-family: timesnewroman;
+  text-align: center;
+}
+
 .color {
 	color: red;
 }
