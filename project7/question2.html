@@ -4,44 +4,39 @@
 	<meta charset="utf-8">
 	<link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-	<div class="section">
-	<p class="question">Have you ever spent more than 12 hours over 5 consecutive days talking on the phone with someone in another country?</p>
-	<br>
 	<form>
-	<ul class="answers">
-		<input type="radio" name="q2" value="a" id="q2a"><label for="q2a">Yes</label><br/>
-		<input type="radio" name="q2" value="b" id="q2b"><label for="q2b">Maybe</label><br/>
-		<input type="radio" name="q2" value="c" id="q2c"><label for="q2c">No</label><br/>
-	</ul>
-	
-	<input id="submit" type="button" onclick="location.href='http://janedahye.github.io/gdfortheweb-spring2016-jane/project7/question3.html';" value="next"></td>
- 	
+		<div class="label">Have you ever spent more than 12 hours over 5 consecutive days talking on the phone with someone in another country?"</div>
+		<input id="q2" type="text" name="q2a" size="17" maxlength="17" style="color:#888;" value="Enter: yes/no/maybe" onfocus="inputFocus(this)" onblur="inputBlur(this)"/>
+		<input id="submit" type="button" onclick="location.href='http://janedahye.github.io/gdfortheweb-spring2016-jane/project7/question3.html';" value="next"></td>
 	</form>
-	</div>
-	<script type="text/javascript" src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
-	<script type="text/javascript" src="js.cookie.js"></script>
-	<script type="text/javascript">
+</div>
+<script type="text/javascript" src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
+<script type="text/javascript" src="js.cookie.js"></script>
+<script type="text/javascript">
 
-		$(function() {
+	(function() {
 
-			// code goes here
-			$("#button").click(function(e) {
-				e.preventDefault();
+				// code goes here
+				$("#button").click(function(e) {
+					e.preventDefault();
 
-				var name = $("#q2").val();
-				Cookies.set("q2", name);
+					var name = $("#q2").val();
+					Cookies.set("q2", name);
+				});
+
 			});
 
-		});
-
+	function inputFocus(i) {
+		if(i.value==i.defaultValue{ i.value=""; i.style.color="#000"; }
+	}
+	function inputBlur(i) {
+		if(i.value==""{ i.value=i.defaultValue; i.style.color="#888"}
+	}
 </script>
 
-	
+
 </body>
-<script src="http://janedahye.github.io/gdfortheweb-spring2016-jane/project7/js.cookie.js"></script> 
 </html>
 
 
-  
