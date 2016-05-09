@@ -83,7 +83,7 @@ section {
 
 .label {
   color: black;
-  border: 2px solid green;
+  border: 2px;
   cursor:pointer;
   margin-top: 45vh;
 }
