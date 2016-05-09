@@ -12,17 +12,18 @@
 body {
 	margin: 0;
 	padding: 0;
-	font-family:abel-regular;
-}
-
-h2 {
-	font-family: worksans-extralight;
-	text-align: center;
+	font-family:verdana;
+  font-weight: bold;
 }
 
 h1 {
   font-family: timesnewroman;
   text-align: center;
+  }
+
+h2 {
+	font-family: worksans-extralight;
+	text-align: center;
 }
 
 .color {
@@ -80,9 +81,16 @@ section {
   list-style:upper-alpha;
 }
 
-label {
-  margin-left:0.5em;
+.label {
+  color: black;
+  border: 2px solid green;
   cursor:pointer;
+  margin-top: 45vh;
+}
+
+.submission {
+  padding: 15px;
+
 }
 
 .pace {

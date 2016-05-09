@@ -6,42 +6,40 @@
 </head>
 
 <body>
-	<div class="section">
-	<p class="question">Have you ever been arrested and/or questioned for participating in a protest?</p>
-	<br>
-	<form>
-	<ul class="answers">
-		<input type="radio" name="q9" value="a" id="q9a"><label for="q9a">Yes</label><br/>
-		<input type="radio" name="q9" value="b" id="q9b"><label for="q9b">Maybe</label><br/>
-		<input type="radio" name="q9" value="c" id="q9c"><label for="q9c">No</label><br/>
-	</ul>
-	
-	<input id="submit" type="button" onclick="location.href='http://janedahye.github.io/gdfortheweb-spring2016-jane/project7/question10.html';" value="next"></td>
- 	
-	</form>
-	</div>
-	<script type="text/javascript" src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
-	<script type="text/javascript" src="js.cookie.js"></script>
-	<script type="text/javascript">
 
-		$(function() {
+	<form>
+		<div class="question">Have you ever been arrested and/or questioned for participating in a protest?</div>
+		<input id="q9" type="text" name="q9a" size="17" maxlength="17" style="color:#888;" value="Enter: yes/no/maybe" onfocus="inputFocus(this)" onblur="inputBlur(this)"/>
+		<input id="submit" type="button" onclick="location.href='http://janedahye.github.io/gdfortheweb-spring2016-jane/project7/question10.html';" value="next"></td>
+	</form>
+</div>
+<script type="text/javascript" src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
+<script type="text/javascript" src="js.cookie.js"></script>
+<script type="text/javascript">
+
+	$(function() {
 
 			// code goes here
 			$("#button").click(function(e) {
 				e.preventDefault();
 
-				var name = $("#name").val();
-				Cookies.set("name", name);
+				var name = $("#q9").val();
+				Cookies.set("q9", q9);
 			});
 
 		});
 
+	function inputFocus(i) {
+		if(i.value==i.defaultValue{ i.value=""; i.style.color="#000"; }
+	}
+	function inputBlur(i) {
+		if(i.value==""{ i.value=i.defaultValue; i.style.color="#888"}
+	}
+
 </script>
 
-	
+
 </body>
-<script src="http://janedahye.github.io/gdfortheweb-spring2016-jane/project7/js.cookie.js"></script> 
 </html>
 
 
-  
