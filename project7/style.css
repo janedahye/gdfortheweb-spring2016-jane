@@ -22,8 +22,10 @@ h1 {
   }
 
 h2 {
-	font-family: worksans-extralight;
+	font-family: bariol-regular;
+  font-size: 48px;
 	text-align: center;
+  color: orange;
 }
 
 .color {
