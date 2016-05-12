@@ -1,6 +1,5 @@
 
-
-
+/*
 var video = document.querySelector("#videoElement");
  
 navigator.getUserMedia = navigator.getUserMedia || navigator.webkitGetUserMedia || navigator.mozGetUserMedia || navigator.msGetUserMedia || navigator.oGetUserMedia;
@@ -41,3 +40,6 @@ function Timer() {
     var show= video.currentTime>=5 && video.currentTime<10;
     overlay.style.visibility= show? 'visible' : 'visible';
   }, false);
+
+*/
+

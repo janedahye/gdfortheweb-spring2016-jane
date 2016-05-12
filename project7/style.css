@@ -9,11 +9,28 @@
   vertical-align: middle;
 }
 
+.button--go {
+  font-weight: bold;
+  position: relative;
+  z-index: 1;
+  background: #F6F6F6;
+  border: 2px solid #000;
+  padding: 8px;
+  color: #000;
+   }
+.button--go:focus {
+    color: #222; }
+.button--go:hover {
+    background: #F6F6F6;
+    border-color: #2CD892;
+    color: #2CD892; }
+
 body {
 	margin: 0;
 	padding: 0;
 	font-family:verdana;
   font-weight: bold;
+  background-color: #F6F6F6;
 }
 
 h1 {
