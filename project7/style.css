@@ -1,3 +1,8 @@
+a:visited { text-decoration: none; color:black; }
+a:hover { text-decoration: none; color:blue; }
+a:focus { text-decoration: none; color:yellow; }
+a:hover, a:active { text-decoration: none; color:black }
+
 .image { 
    position: relative; 
    width: 100%; 
@@ -5,7 +10,7 @@
 
 h2 { 
    position: absolute; 
-   top: 200px; 
+   top: 300px; 
    left: 0; 
    width: 100%; 
 }
